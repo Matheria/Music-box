@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Box - Matheria</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <header class="header page__header">
+    <div class="container header-container">
+      <div class="header__logo logo"> 
+        <img class="logo__img" src="./images/svg/logo.svg" width="24" height="24" alt="Music box logo">
+        <span class="header__logo-text">Music Box</span>
+      </div>
+      <nav class="header__nav main-nav">
+        <ul class="header__nav-list list">
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#">Каталог</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="./artist.html">Исполнители</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__search">
+        <input class="header__input" type="text" name="search" placeholder="Поиск...">
+      </div>
+    </div>
+  </header>
+
+  <main class="page__main" id="page-description">
+    <section class="subscribe section">
+      <div class="container subscribe-container">
+        <h1 class="subscribe__title">Онлайн музыка где угодно</h1>
+        <h2 class="subscribe__sub-title">Без ограничений</h2>
+        <p class="subscribe__text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form class="subscribe__form">
+          <input class="subscribe__input" type="text" name="name" placeholder="Имя">
+          <input class="subscribe__input" type="email" name="email" placeholder="Email">
+          <button class="subscribe__button btn btn_green">Получить доступ</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="pricing section" id="page-pricing">
+      <h2 class="pricing__title">Формы подписки</h2>
+      <div class="container pricing-container">
+        <div class="pricing__item pricing__item_free">
+          <h3 class="pricing__sub-title">Бесплатная</h3>
+          <p class="pricing__price">
+            <span class="pricing__value">0</span>
+            <span class="pricing__currency">руб.</span>
+          </p>
+          <button class="pricing__button btn btn_transparent">Оформить</button>
+          <p class="pricing__text">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+        </div>
+        <div class="pricing__item pricing__item_standart">
+          <h3 class="pricing__sub-title">Стандартная</h3>
+          <p class="pricing__price">
+            <span class="pricing__value">250</span>
+            <span class="pricing__currency">руб.</span>
+          </p>
+          <button class="pricing__button btn btn_transparent">Оформить</button>
+          <p class="pricing__text">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+        </div>
+        <div class="pricing__item pricing__item_premium">
+          <h3 class="pricing__sub-title">Премиум</h3>
+          <p class="pricing__price">
+            <span class="pricing__value">500</span>
+            <span class="pricing__currency">руб.</span>
+          </p>
+          <button class="pricing__button btn btn_transparent">Оформить</button>
+          <p class="pricing__text">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+        </div>
+        <p class="pricing__footer">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
