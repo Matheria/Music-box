@@ -1,0 +1,48 @@
+.app {
+  margin-bottom: 100px;
+  padding-top: 100px;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__container {
+    display: flex;
+
+    @media (max-width: $mobile-width) {
+        flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+    margin-right: 144px;
+    max-width: 600px;
+    color: $dark-gray;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+  }
+
+  &__link {
+    display: block;
+    padding: 17px 40px;
+    width: 131px;
+    height: 53px;
+    font-size: 12.8px;
+    line-height: 19px;
+    color: $white;
+    background: $red;
+    border-radius: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    &__img {
+      margin-bottom: 15px;
+      width: 333px;
+      height: 278px;
+    }
+  }
+}
