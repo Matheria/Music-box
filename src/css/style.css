@@ -697,16 +697,48 @@ h3 {
 .discography__img {
   margin-bottom: 18px;
 }
-@media (max-width: 768px) {
-  .discography__img {
-    width: 137px;
-    height: 137px;
-  }
-}
 .discography__album {
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
+}
+
+.similar {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.similar__title {
+  text-align: left;
+  margin-bottom: 48px;
+}
+.similar__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 25px;
+}
+.similar__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+@media (max-width: 768px) {
+  .similar__item {
+    max-width: 137px;
+  }
+}
+.similar__img {
+  margin-bottom: 17px;
+}
+.similar__artist {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+.similar__text {
+  display: block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

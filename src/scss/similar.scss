@@ -1,9 +1,10 @@
-.discography {
+.similar {
+  margin-bottom: 100px;
   padding-top: 100px;
 
   &__title {
-    margin-bottom: 48px;
     text-align: left;
+    margin-bottom: 48px;
   }
 
   &__wrapper {
@@ -24,12 +25,18 @@
   }
 
   &__img {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
-  &__album {
+  &__artist {
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
+    text-align: center;
+  }
+
+  &__text {
+    display: block;
+    text-align: center;
   }
 }
