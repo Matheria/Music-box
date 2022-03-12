@@ -1,5 +1,5 @@
 .header__logo-text {
-  font-size: 16px;
+  font-size: 11px;
   line-height: 1.5;
 }
 
@@ -111,11 +111,11 @@ h3 {
   display: flex;
   align-items: center;
 }
-.header .header-container {
+.header__container {
   display: flex;
 }
 @media (max-width: 768px) {
-  .header .header-container {
+  .header__container {
     flex-direction: column;
   }
 }
@@ -125,8 +125,13 @@ h3 {
 }
 .header__logo-text {
   margin: 0 90px 0 16px;
+  font-size: 11px;
   color: #ffffff;
   text-transform: uppercase;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
 }
 .header__nav-list {
   display: flex;
@@ -139,17 +144,20 @@ h3 {
   }
 }
 .header__nav-item {
+  font-size: 11px;
   padding-right: 24px;
+  line-height: 13px;
 }
 @media (max-width: 768px) {
   .header__nav-item {
-    margin-bottom: 3px;
+    padding-bottom: 3px;
   }
 }
 .header__nav-item:last-child {
   margin-bottom: 0;
 }
 .header__nav-link {
+  font-size: 11px;
   color: #cacaca;
   text-transform: uppercase;
 }
@@ -544,6 +552,73 @@ h3 {
 .footer__separator {
   margin-bottom: 40px;
   border: 1px solid #cacaca;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-height: 713px;
+  padding: 200px 0;
+  background-image: url("../images/MortenHarket.png");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .artist {
+    height: 730px;
+    max-height: 730px;
+  }
+}
+.artist__title {
+  margin-top: 50px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .artist__title {
+    margin-top: 25px;
+  }
+}
+.artist__text {
+  margin-bottom: 48px;
+}
+.artist__btn-wrapper {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .artist__btn-wrapper {
+    flex-direction: column;
+  }
+}
+.artist__btn {
+  position: relative;
+  margin-right: 1.5rem;
+  width: 200px;
+  height: 62px;
+  font-size: 12.8px;
+}
+.artist__btn_purple {
+  background-color: #5328a1;
+}
+.artist__btn_red {
+  background-color: #95390c;
+}
+@media (max-width: 768px) {
+  .artist__btn {
+    margin-bottom: 1.5rem;
+  }
+}
+.artist__btn-inside-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12.8px;
+}
+.artist__btn-img {
+  padding-right: 16px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

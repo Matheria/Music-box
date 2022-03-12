@@ -1,0 +1,72 @@
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-height: 713px;
+  padding: 200px 0;
+
+  background-image: url("../images/MortenHarket.png");
+  background-position: center;
+  background-size: cover;    
+
+  @media (max-width: $mobile-width) {
+    height: 730px;
+    max-height: 730px;
+  }
+
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 16px;
+    text-align: left;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 25px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 48px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    margin-right: 1.5rem;
+    width: 200px;
+    height: 62px;
+    font-size: 12.8px;
+
+    &_purple {
+      background-color: $purple;
+    }
+
+    &_red {
+      background-color: $red;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__btn-inside-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-size: 12.8px;
+  }
+
+  &__btn-img {
+    padding-right: 16px;
+    height: 20px;
+  }
+}
