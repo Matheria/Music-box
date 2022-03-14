@@ -36,6 +36,8 @@
     color: $white;
     background: $red;
     border-radius: 32px;
+    border: none;
+    outline: none;
   }
 
   @media (max-width: $mobile-width) {

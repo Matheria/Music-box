@@ -82,13 +82,15 @@
   }
 
   &__link {
-    padding: 16px 28px;
+    padding: 16px 30px;
     width: 135px;
     height: 53px;
     font-size: 12.8px;
-    line-height: 19px;
+    line-height: 19.2px;
     color: $dark-gray;
     border: 2px solid $dark-gray;
+    background-color: transparent;
+    vertical-align: middle;
   }
 
   &__content-wrapper {

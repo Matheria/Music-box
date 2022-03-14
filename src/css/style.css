@@ -210,6 +210,11 @@ h3 {
     padding: 200px 20px;
   }
 }
+@media (max-width: 768px) {
+  .subscribe__title {
+    margin: 50px 0 0;
+  }
+}
 .subscribe__sub-title {
   margin-bottom: 31px;
 }
@@ -424,13 +429,15 @@ h3 {
   color: #cacaca;
 }
 .news__link {
-  padding: 16px 28px;
+  padding: 16px 30px;
   width: 135px;
   height: 53px;
   font-size: 12.8px;
-  line-height: 19px;
+  line-height: 19.2px;
   color: #cacaca;
   border: 2px solid #cacaca;
+  background-color: transparent;
+  vertical-align: middle;
 }
 .news__content-wrapper {
   display: flex;
@@ -474,6 +481,8 @@ h3 {
   color: #ffffff;
   background: #95390c;
   border-radius: 32px;
+  border: none;
+  outline: none;
 }
 @media (max-width: 768px) {
   .app__img {
