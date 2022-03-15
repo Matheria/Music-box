@@ -1,4 +1,5 @@
 .header {
+  @extend %section-size;
   position: absolute;
   top: 25px;
   right: 0;
@@ -7,12 +8,9 @@
   display: flex;
   align-items: center;
 
-  &__container {
-    display: flex;
-
-    @media (max-width: $mobile-width) {
-      flex-direction: column;
-    }
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   &__logo {
@@ -20,24 +18,25 @@
     align-items: center;
   }
 
+  &__logo-img {
+    width: 24px;
+    height: 24px;
+  }
+
   &__logo-text {
     margin: 0 90px 0 16px;
-    font-size: 11px;
-    color: $white;
+
+    color: var(--white);
     text-transform: uppercase;
 
     @extend %text-small;
   }
 
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
-
   &__nav-list {
+    @extend %indent-none;
     display: flex;
 
-    @media (max-width: $mobile-width) {
+    @media screen and (max-width: $mobile-width) {
       flex-direction: column;
       align-items: flex-start;
       margin: 17px 0 18px;
@@ -45,54 +44,70 @@
   }
 
   &__nav-item {
-    font-size: 11px;
-    padding-right: 24px;
-    line-height: 13px;
+    display: flex;
 
-    @media (max-width: $mobile-width) {
+    padding-right: 24px;
+
+    list-style: none;
+
+    @media screen and (max-width: $mobile-width) {
       padding-bottom: 3px;
     }
 
-    &:last-child {
-      margin-bottom: 0;
+    &:last-of-type {
+      padding: 0;
     }
   }
 
   &__nav-link {
-    font-size: 11px;
-    color: $dark-gray;
+    @extend %text-small;
+    color: var(--dark-gray);
     text-transform: uppercase;
+    text-decoration: none;
 
-    &:hover {
-      color: $white;
+    &_selected {
+      color: var(--white);
     }
 
-    @media (max-width: $mobile-width) {
+    &:last-of-type {
+      margin: 0;
+    }
+
+    @media screen and (max-width: $mobile-width) {
       line-height: 13px;
     }
   }
 
-  &__search {
-    margin-left: auto;
-  }
+  &__form {
+    display: flex;
 
-  &__input {
     width: 20vw;
     max-width: 248px;
-    height: 25px;
-    background-color: $dark;
-    border: 0;
-    border-radius: 50px;
 
-    @media (max-width: $mobile-width) {
+    margin: auto 0 auto auto;
+
+    @media screen and (max-width: $mobile-width) {
       width: calc(100vw - 40px);
       max-width: 378px;
 
-      margin-left: 0;
+      margin: 0;
     }
+  }
+
+  &__input {
+    @extend %indent-none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+
+    background-color: var(--dark);
+
+    border: 0;
+    border-radius: 25px;
 
     &::placeholder {
-      padding: 16px 22px 18px;
+      padding: 5px 0 5px 10px;
+
       color: #757575;
       text-transform: uppercase;
     }

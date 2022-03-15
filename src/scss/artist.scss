@@ -1,63 +1,75 @@
 .artist {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
+
+  box-sizing: border-box;
+  min-height: 550px;
   max-height: 713px;
-  padding: 200px 0;
+  padding: 200px 120px;
 
-  background-image: url("../images/MortenHarket.png");
+  background-image: url("../images/Morten\ Harket.png");
   background-position: center;
-  background-size: cover;    
+  background-size: cover;
 
-  @media (max-width: $mobile-width) {
+  @media screen and (max-width: $mobile-width) {
     height: 730px;
     max-height: 730px;
+    padding: 200px 20px;
   }
 
   &__title {
+    width: 100%;
     margin-top: 50px;
-    margin-bottom: 16px;
-    text-align: left;
 
-    @media (max-width: $mobile-width) {
+    text-align: start;
+
+    @media screen and (max-width: $mobile-width) {
       margin-top: 25px;
     }
   }
 
-  &__text {
-    margin-bottom: 48px;
+  &__description {
+    @extend %text-size-1;
+    width: 100%;
+    margin: 16px 0 48px;
+
+    text-align: start;
   }
 
-  &__btn-wrapper {
-    display: flex;
-
-    @media (max-width: $mobile-width) {
-      flex-direction: column;
-    }
-  }
-
-  &__btn {
-    position: relative;
-    margin-right: 1.5rem;
+  &__button {
     width: 200px;
     height: 62px;
+    margin-right: 19px;
+    margin-bottom: 24px;
+    padding: 20px 30px;
+
+    color: var(--white);
     font-size: 12.8px;
+    text-transform: uppercase;
 
-    &_purple {
-      background-color: $purple;
+    border: 0;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    &_color {
+      &_purple {
+        background-color: var(--purple);
+      }
+
+      &_red {
+        background-color: var(--red);
+      }
     }
 
-    &_red {
-      background-color: $red;
-    }
-
-    @media (max-width: $mobile-width) {
-      margin-bottom: 1.5rem;
+    @media screen and (max-width: $mobile-width) {
+      display: block;
     }
   }
 
-  &__btn-inside-wrapper {
+  &__button-inside {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -65,8 +77,8 @@
     font-size: 12.8px;
   }
 
-  &__btn-img {
+  &__button-img {
+    width: 20px;
     padding-right: 16px;
-    height: 20px;
   }
 }

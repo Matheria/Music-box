@@ -1,21 +1,23 @@
 .footer {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);  
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 
-  &__container_top {
+  &__menu-top {
+    @extend %section-size;
     display: grid;
     grid-template-columns: repeat(4, 270px);
-    column-gap: min(40px, 100vw / 30);
+
     padding: 62px 20px 72px;
 
-    @media (max-width: 1240px) {
+    column-gap: min(40px, 100vw / 30);
+
+    @media screen and (max-width: 1240px) {
       grid-template-columns: repeat(4, 21.3vw);
     }
 
-    @media (max-width: $mobile-width) {
+    @media screen and (max-width: $mobile-width) {
       grid-template-columns: repeat(1, auto);
       row-gap: 30px;
+
       padding-bottom: 67px;
     }
   }
@@ -28,44 +30,63 @@
 
   &__title {
     margin-bottom: 15px;
+
     font-size: 18px;
-    line-height: 27px;
-    text-align: left;
+    text-align: start;
 
-    @media (max-width: $mobile-width) {
-      margin-bottom: 15px;
-    }
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-
-    &_direction-row {
-      flex-direction: row;
-      column-gap: 24px;
-    }
-
-    &_bottom {
-      flex-direction: row;
-      column-gap: 16px;
-      padding-bottom: 49px;
-      
-      @media (max-width: $mobile-width) {
-        flex-direction: column;
-        gap: 16px;
-        padding-right: 25px;
-        padding-bottom: 43px;
-      }
+    @media screen and (max-width: $mobile-width) {
+      margin-bottom: 16px;
     }
   }
 
   &__link {
-    color: $gray;
+    @extend %text-size-1;
+    color: var(--gray);
+    text-decoration: none;
+
+    &_place {
+      &_bottom {
+        margin-right: 16px;
+      }
+    }
   }
 
-  &__separator {
-    margin-bottom: 40px;
-    border: 1px solid $dark-gray;
+  &__list {
+    @extend %indent-none;
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+
+    &_direction {
+      &_row {
+        flex-direction: row;
+        gap: 24px;
+      }
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__line {
+    color: var(--dark-gray);
+    size: 1px;
+
+    @extend %indent-none;
+  }
+
+  &__menu-bottom {
+    @extend %section-size;
+    padding: 40px 20px 49px;
+
+    @media screen and (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-right: 25px;
+      padding-bottom: 43px;
+    }
   }
 }
