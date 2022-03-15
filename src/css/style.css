@@ -320,7 +320,7 @@ h3 {
 }
 .pricing__sub-title {
   margin-bottom: 200px;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 36px;
   font-weight: 400;
   text-align: center;
@@ -701,7 +701,15 @@ h3 {
   }
 }
 .discography__img {
+  width: 250px;
+  height: 250px;
   margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+  .discography__img {
+    width: 137px;
+    height: 137px;
+  }
 }
 .discography__album {
   font-weight: 700;
@@ -734,7 +742,15 @@ h3 {
   }
 }
 .similar__img {
+  width: 250px;
+  height: 250px;
   margin-bottom: 17px;
+}
+@media (max-width: 768px) {
+  .similar__img {
+    width: 137px;
+    height: 137px;
+  }
 }
 .similar__artist {
   font-weight: 700;

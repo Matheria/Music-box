@@ -25,7 +25,14 @@
   }
 
   &__img {
+    width: 250px;
+    height: 250px;
     margin-bottom: 17px;
+
+    @media (max-width: $mobile-width) {
+      width: 137px;
+      height: 137px;
+    }
   }
 
   &__artist {
