@@ -1,2 +1,7 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Matheria/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Matheria/layout-designer-project-lvl2/actions)
+# Music box
+
+Two adaptive pages of the music portal "Music Box". The portal provides access to online listening to music.
+
+## Deploy: 
+
+[Music Box](https://matheria-music-box.surge.sh/)
